@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "mensa-pdfs-client-side-solution",
+    "id": "e1a92980-fc60-423d-8710-a36f673d8a46",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.19.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "MensaPdfs description"
+      },
+      "longDescription": {
+        "default": "MensaPdfs description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "mensa-pdfs Feature",
+        "description": "The feature that activates elements of the mensa-pdfs solution.",
+        "id": "65b0924a-1404-4a6f-9741-3a97de573717",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/mensa-pdfs.sppkg"
+  }
+}

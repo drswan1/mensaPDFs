@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "mensa-pdfs-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/mensaPdfs/MensaPdfsWebPart.js",
+          "manifest": "./src/webparts/mensaPdfs/MensaPdfsWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "MensaPdfsWebPartStrings": "lib/webparts/mensaPdfs/loc/{locale}.js"
+  }
+}
