@@ -1,5 +1,92 @@
-.selected{
-  border: solid;
-  width: 300px;
-  height: 100%;
+.mensaPdfs {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 5px 7px 5px rgba(0, 0, 0, 0.1),
+              2px 4px 6px rgba(0, 0, 0, 0.1),
+              1px 1px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 1.5px;
+  background-color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  min-height: 15rem;
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.5px;
+  padding-bottom: 1rem;
+  background-color:#115740;
+  color:white;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+  padding: 10px;
+}
+
+.button {
+  background-color: #115740;
+  border-radius: 3px;
+  width: 30%;
+  min-width: 120px;
+  max-width: 200px;
+  height: 4.5rem;
+  padding: 8px 14px;
+  cursor: pointer;
+  border: 2px solid #115740;
+  color: white;
+  font-weight: bolder;
+  box-shadow: 4px 4px 0 0 #f3f3f4;
+  text-align: center;
+  margin: 1em;
+  transition: transform 200ms;
+  border: 2px solid white;
+}
+
+.button:hover {
+  transform: translate(-2px, -2px);
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+  .mensaPdfs {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .button {
+    width: 40%;
+    min-width: 100px;
+    height: 5rem;
+  }
+
+  .buttonContainer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 480px) {
+  .titleContainer h1 {
+    font-size: 1.5rem;
+  }
+
+  .button {
+    width: 100%;
+    max-width: none;
+    height: 3.5rem;
+    margin: 0.5em 0;
+  }
+
+  .buttonContainer {
+    flex-direction: column;
+  }
 }
