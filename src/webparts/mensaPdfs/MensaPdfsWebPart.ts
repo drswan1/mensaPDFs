@@ -35,14 +35,14 @@ export default class MensaPdfsWebPart extends BaseClientSideWebPart<IMensaPdfsWe
                                     </div>
                                     <ul class="${styles.menu}">
                                       <li class="${styles.active}">Mensa & M-Cafe NaWi</li>
-                                      <li>M-Cafe Tosknatrakt</li>
+                                      <li>M-Cafe Toskanatrakt</li>
                                       <li>Techno-Z Itzling</li>
                                     </ul>
                                   </div>
                     </div>
                     <div class="${styles.mensaMenuContainer}">
                       <div class="${styles.mensaMenuButton}" data-url="https://menu.mensen.at/index/menu-pdf/locid/35?woy=${this.getWeekNumber()}&year=${this.getCurrentYear()}">
-                        Speiseplan Anschaun
+                        Speiseplan ansehen
                       </div>
                     </div>
           </div>
