@@ -11,16 +11,17 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: white;
   min-height: 15rem;
+  font-size: large;
 }
 
 .titleContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 1.5px;
-  padding-bottom: 1rem;
-  background-color:#115740;
+  border-bottom: #115740 solid;
+  background-color: #115740;
   color:white;
+  ;
 }
 
 .buttonContainer {
@@ -38,7 +39,7 @@
   width: 30%;
   min-width: 120px;
   max-width: 200px;
-  height: 4.5rem;
+  height: 5rem;
   padding: 8px 14px;
   cursor: pointer;
   border: 2px solid #115740;
@@ -48,11 +49,13 @@
   text-align: center;
   margin: 1em;
   transition: transform 200ms;
-  border: 2px solid white;
+  font-size:large;
 }
 
 .button:hover {
-  transform: translate(-2px, -2px);
+  box-shadow: 3px 3px white,
+  6px 6px 0 0 #d4d4d4;
+  transform:  translate(-2px, -2px);
 }
 
 /* Media Queries for Smaller Screens */
@@ -65,7 +68,7 @@
   .button {
     width: 40%;
     min-width: 100px;
-    height: 5rem;
+    height: 4rem;
   }
 
   .buttonContainer {
