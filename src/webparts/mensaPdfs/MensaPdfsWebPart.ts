@@ -8,18 +8,18 @@ export interface IMensaPdfsWebPartProps {
 
 export default class MensaPdfsWebPart extends BaseClientSideWebPart<IMensaPdfsWebPartProps> {
 
-  private getWeekNumber(): number {
-    const currentDate: Date = new Date();
-    const startOfYear: Date = new Date(currentDate.getFullYear(), 0, 1); // January 1st
-    const daysPastSinceStartOfYear: number = (currentDate.getTime() - startOfYear.getTime()) / (24 * 60 * 60 * 1000); // Milliseconds to days
-    const weekNumber: number = Math.ceil((daysPastSinceStartOfYear + startOfYear.getDay() + 1) / 7);
-    return weekNumber;
-  }
+  // private getWeekNumber(): number {
+  //   const currentDate: Date = new Date();
+  //   const startOfYear: Date = new Date(currentDate.getFullYear(), 0, 1); // January 1st
+  //   const daysPastSinceStartOfYear: number = (currentDate.getTime() - startOfYear.getTime()) / (24 * 60 * 60 * 1000); // Milliseconds to days
+  //   const weekNumber: number = Math.ceil((daysPastSinceStartOfYear + startOfYear.getDay() + 1) / 7);
+  //   return weekNumber;
+  // }
 
-  private getCurrentYear(): number {
-    const currentDate: Date = new Date();
-    return currentDate.getFullYear();
-  }
+  // private getCurrentYear(): number {
+  //   const currentDate: Date = new Date();
+  //   return currentDate.getFullYear();
+  // }
 
   public render(): void {
     this.domElement.innerHTML = `
@@ -39,13 +39,13 @@ export default class MensaPdfsWebPart extends BaseClientSideWebPart<IMensaPdfsWe
       buttons[i].addEventListener('click', (event: Event) => {
         const target = event.target as HTMLElement;
         if (target.id === 'Nawi') {
-          window.open(`https://menu.mensen.at/index/menu-pdf/locid/35?woy=${this.getWeekNumber()}&year=${this.getCurrentYear()}`, '_blank');
+          window.open(`https://www.mensen.at/standort/mensa-m-cafe-nawi/`, '_blank');
         }
         if (target.id === 'Toskana') {
-          window.open(`https://menu.mensen.at/index/menu-pdf/locid/36?woy=${this.getWeekNumber()}&year=${this.getCurrentYear()}`, '_blank');
+          window.open(`https://www.mensen.at/standort/m-cafe-toskana/`, '_blank');
         }
         if (target.id === 'Itzling') {
-          window.open(`https://menu.mensen.at/index/menu-pdf/locid/100?woy=${this.getWeekNumber()}&year=${this.getCurrentYear()}`, '_blank');
+          window.open(`https://www.mensen.at/standort/m-bistro-techno-z-itzling/`, '_blank');
         }
       });
     }
