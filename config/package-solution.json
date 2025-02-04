@@ -3,7 +3,7 @@
   "solution": {
     "name": "mensa-pdfs-client-side-solution",
     "id": "e1a92980-fc60-423d-8710-a36f673d8a46",
-    "version": "1.0.0.0",
+    "version": "1.0.1.0",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
     "isDomainIsolated": false,
