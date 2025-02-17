@@ -25,7 +25,7 @@ export default class MensaPdfsWebPart extends BaseClientSideWebPart<IMensaPdfsWe
     this.domElement.innerHTML = `
       <div class="${styles.mensaPdfs}">
         <div class="${styles.titleContainer}">
-          <h1>Speisepläne</h1>
+          <h1>Speisepläne an deiner Mensa</h1>
         </div>
         <div class="${styles.buttonContainer}">
           <button class="${styles.button}" id="Nawi">NaWi</button>
