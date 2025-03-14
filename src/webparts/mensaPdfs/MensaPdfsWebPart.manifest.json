@@ -20,7 +20,7 @@
     "group": { "default": "Advanced" },
     "title": { "default": "MensaPdfs" },
     "description": { "default": "MensaPdfs description" },
-    "officeFabricIconFontName": "Page",
+    "officeFabricIconFontName": "EatDrink",
     "properties": {
       "description": "MensaPdfs"
     }
